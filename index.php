@@ -50,7 +50,7 @@
 
                 Amount of Words: <input type="text" name="wordAmount"><br>
                 <input type="checkbox" name="number" value="number"> Include Number?<br>
-                <input type="checkbox" name="character" value="symbol"> Include Special Symbol?<br><br>
+                <input type="checkbox" name="symbol" value="symbol"> Include Special Symbol?<br><br>
 
                 <p><input class="btn btn-default" type="submit" value="Generate My Password!"></p>
 
