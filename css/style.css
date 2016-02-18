@@ -1,0 +1,40 @@
+body {
+  background-color:white;
+  padding-bottom: 40px;
+}
+.pwGen h1, h2, h3  {
+  color:blue;
+  text-align: center;
+}
+.pwGen p    {
+  color:blue;
+  text-align: center;
+}
+.pwGen img  {
+  margin: auto;
+  display: block;
+  width: 50%;
+}
+
+.pwGen {
+  width: 100%;
+  text-align: center;
+}
+
+.name {
+  margin-top:75px;
+}
+
+.footer {
+  color: blue;
+  width: 95%;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
+  text-align: left;
+}
+
+.pull-right {
+  margin-right: 25px;
+  text-align: right;
+}
