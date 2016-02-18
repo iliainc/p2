@@ -29,10 +29,13 @@ foreach($data as $symbol) {
 
 # generate random integers to be used as indices to retrieve array values, corresponding to
 # how many symbols and words there are in the input .txt files
-$intRandWordIndex = rand(0,44);
 $intRandSymbolIndex = rand(0,11);
+
 # generate random number to be used if user requests number in password
 $intRandNumber = rand(0,9999);
+
+# holder to store wordAmount value when it's provided by user
+$howManyWords = 0;
 
 # validate input
 if(isset($_GET["wordAmount"])) {
@@ -41,12 +44,29 @@ if(isset($_GET["wordAmount"])) {
     };
     if(!empty($_GET["wordAmount"])) {
         if (ctype_digit($_GET["wordAmount"])) {
-            $passwordResult = intval($_GET["wordAmount"]) ."\n";
+            $howManyWords = intval($_GET["wordAmount"]) ."\n";
+            $passwordResult = "";
+            if ($howManyWords > 10) {
+                $passwordResult = "Amount of Words must be 10 or fewer.";
+            }
+            else {
+                # build the password string
+                for ($x = 1; $x <= $howManyWords; $x++) {
+                    $intRandWordIndex = rand(0,44);
+                    $pwWord = trim($wordList[$intRandWordIndex]);
+                    $passwordResult = $passwordResult . $pwWord;
+                    if ($x < $howManyWords) {
+                        $passwordResult = $passwordResult . '-';
+                    }
+                }
+            }
         } else {
-            $passwordResult = "Amount of Words must only contain numbers.\n";
+            $passwordResult = "Amount of Words must contain only numbers.\n";
         }
     };
 };
+
+
 
 if(isset($_GET["symbol"])) echo "symbol is set\n";
 
