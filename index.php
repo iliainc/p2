@@ -29,7 +29,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project 2</a>
+          <a class="navbar-brand" href="#">Project 2 - Password Generator</a>
         </div>
       </div>
     </nav>
@@ -50,7 +50,7 @@
 
                 Amount of Words: <input type="text" name="wordAmount"><br>
                 <input type="checkbox" name="number" value="number"> Include Number?<br>
-                <input type="checkbox" name="character" value="character"> Include Character?<br><br>
+                <input type="checkbox" name="character" value="symbol"> Include Special Symbol?<br><br>
 
                 <p><input class="btn btn-default" type="submit" value="Generate My Password!"></p>
 

@@ -4,7 +4,7 @@
 <http://p2.ilyanossov.me>
 
 ## Description
-This project allows users to generate a random password with the specified amount of words, and the option of including a number and/or a special character.
+This project allows users to generate a random password with the specified amount of words, and the option of including a number and/or special character.
 
 ## Demo
 <https://youtu.be/TODO>
