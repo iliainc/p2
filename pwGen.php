@@ -61,7 +61,7 @@ if(isset($_GET["wordAmount"])) {
                     $pwSymbol = trim($symbolList[$intRandSymbolIndex]);
                     $passwordResult = $passwordResult . '-' . $pwSymbol;
                 };
-
+                
                 if(isset($_GET["number"])) {
                     # generate random number to be used if user requests number in password
                     $intRandNumber = rand(0,9999);
