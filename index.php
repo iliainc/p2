@@ -46,12 +46,15 @@
     <div class="password">
       <div class="row">
         <div class="col-center">
+            <form action="index.php" method="get">
 
-          <p>Amount of Words: <a href="#">TODO</a></p>
-          <p>Add a Number: <a href="#">TODO</a></p>
-          <p>Add a Number: <a href="#">TODO</a></p>
-          <p><a class="btn btn-default" href="#" role="button">Generate My Password!</a></p>
+                Amount of Words: <input type="text" name="wordAmount"><br>
+                <input type="checkbox" name="number" value="number"> Include Number?<br>
+                <input type="checkbox" name="character" value="character"> Include Character?<br><br>
 
+                <p><input class="btn btn-default" type="submit" value="Generate My Password!"></p>
+
+            </form>
         </div>
       </div>
     </div>
