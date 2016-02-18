@@ -65,6 +65,7 @@
 
 	<img src='images/password_strength.png' alt='Password Generator'>
     <div>
+    </br>
         Image credit: http://xkcd.com/936
     </div>
 
