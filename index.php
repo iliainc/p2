@@ -52,7 +52,7 @@
         <div class="col-center">
             <form action="index.php" method="get">
 
-                Amount of Words: <input type="text" name="wordAmount"><br>
+                Amount of Words (10 or less): <input type="text" name="wordAmount"><br>
                 <input type="checkbox" name="number" value="true"> Include Number?<br>
                 <input type="checkbox" name="symbol" value="true"> Include Special Symbol?<br><br>
 

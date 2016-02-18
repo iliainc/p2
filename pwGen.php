@@ -27,13 +27,6 @@ foreach($data as $symbol) {
     array_push($symbolList, $symbol);
 }
 
-# generate random integers to be used as indices to retrieve array values, corresponding to
-# how many symbols and words there are in the input .txt files
-$intRandSymbolIndex = rand(0,11);
-
-# generate random number to be used if user requests number in password
-$intRandNumber = rand(0,9999);
-
 # holder to store wordAmount value when it's provided by user
 $howManyWords = 0;
 
@@ -52,6 +45,8 @@ if(isset($_GET["wordAmount"])) {
             else {
                 # build the password string
                 for ($x = 1; $x <= $howManyWords; $x++) {
+                    # generate random integers to be used as indices to retrieve array values
+                    # there are 45 words in text file
                     $intRandWordIndex = rand(0,44);
                     $pwWord = trim($wordList[$intRandWordIndex]);
                     $passwordResult = $passwordResult . $pwWord;
@@ -59,6 +54,19 @@ if(isset($_GET["wordAmount"])) {
                         $passwordResult = $passwordResult . '-';
                     }
                 }
+                if(isset($_GET["symbol"])) {
+                    # generate random integers to be used as indices to retrieve array values
+                    # there are 12 symbols in text file
+                    $intRandSymbolIndex = rand(0,11);
+                    $pwSymbol = trim($symbolList[$intRandSymbolIndex]);
+                    $passwordResult = $passwordResult . '-' . $pwSymbol;
+                };
+
+                if(isset($_GET["number"])) {
+                    # generate random number to be used if user requests number in password
+                    $intRandNumber = rand(0,9999);
+                    $passwordResult = $passwordResult . '-' . strval($intRandNumber);
+                };
             }
         } else {
             $passwordResult = "Amount of Words must contain only numbers.\n";
@@ -67,10 +75,6 @@ if(isset($_GET["wordAmount"])) {
 };
 
 
-
-if(isset($_GET["symbol"])) echo "symbol is set\n";
-
-if(isset($_GET["number"])) echo "number is set\n";
 
 
 
