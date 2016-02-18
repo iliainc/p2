@@ -7,7 +7,7 @@
 This project allows users to generate a random password with the specified amount of words, and the option of including a number and/or a special symbol.
 
 ## Demo
-<https://youtu.be/TODO>
+<https://youtu.be/Gw9s_LbLteA>
 
 ## Details for teaching team
 Please feel free to alternate between a wide range of numbers while clicking the checkboxes so that final passwords include special symbols and/or numbers.
