@@ -40,7 +40,11 @@
   <div class="pwGen">
 
     <div class="name">
+
       <h1>Password Generator</h1>
+
+      <h3><?php echo($passwordResult); ?></h3>
+
     </div>
 
     <div class="password">
@@ -49,8 +53,8 @@
             <form action="index.php" method="get">
 
                 Amount of Words: <input type="text" name="wordAmount"><br>
-                <input type="checkbox" name="number" value="number"> Include Number?<br>
-                <input type="checkbox" name="symbol" value="symbol"> Include Special Symbol?<br><br>
+                <input type="checkbox" name="number" value="true"> Include Number?<br>
+                <input type="checkbox" name="symbol" value="true"> Include Special Symbol?<br><br>
 
                 <p><input class="btn btn-default" type="submit" value="Generate My Password!"></p>
 
