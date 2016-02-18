@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/carousel.css" rel="stylesheet">
+  <?php require 'pwGen.php'; ?>
 
 </head>
 
@@ -49,13 +50,15 @@
           <p>Amount of Words: <a href="#">TODO</a></p>
           <p>Add a Number: <a href="#">TODO</a></p>
           <p>Add a Number: <a href="#">TODO</a></p>
-          <p><a class="btn btn-default" href="#" role="button">Generate My Password! &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Generate My Password!</a></p>
 
         </div>
       </div>
     </div>
 
-    <img src='images/password_strength.png' alt='Password Generator'>
+    <a href="http://xkcd.com/936/">
+				<img src='images/password_strength.png' alt='Password Generator'>
+	</a>
 
   </div>
 
