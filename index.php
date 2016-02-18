@@ -63,9 +63,10 @@
       </div>
     </div>
 
-    <a href="http://xkcd.com/936/">
-				<img src='images/password_strength.png' alt='Password Generator'>
-	</a>
+	<img src='images/password_strength.png' alt='Password Generator'>
+    <div>
+        Image credit: http://xkcd.com/936
+    </div>
 
   </div>
 
